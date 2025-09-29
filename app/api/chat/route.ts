@@ -25,7 +25,6 @@ export async function POST(req: Request) {
       "You are a helpful and capable assistant. Follow the user instructions carefully and thoroughly. Always respond in the same language that the user is using.",
   });
 
-  // send sources and reasoning back to the client
   return result.toUIMessageStreamResponse({
     sendSources: true,
     sendReasoning: true,
